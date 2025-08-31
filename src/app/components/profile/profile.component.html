@@ -1,0 +1,28 @@
+
+
+
+
+
+<div class="w-75 m-auto bg-light shadow rounded">
+  <div class="row p-5 g-4">
+    <div class="col-md-6">
+      <label for="name" class="pb-2">First Name:</label>
+      <input type="text" id="name" class="form-control" [(ngModel)]="user.firstName">
+    </div>
+    <div class="col-md-6">
+      <label for="name" class="pb-2">Last Name:</label>
+      <input type="text" id="name" class="form-control" [(ngModel)]="user.lastName">
+    </div>
+    <div class="col-md-6">
+      <label for="email" class="pb-2">Email:</label>
+      <input type="email" id="email" class="form-control" [(ngModel)]="user.email">
+    </div>
+    <div class="col-md-6">
+      <label for="age" class="pb-2">SESA:</label>
+      <input type="text" id="age" class="form-control" [(ngModel)]="user.sesa">
+    </div>
+    <div class="col-md-12 d-flex justify-content-end">
+      <button class="btn btn-primary" (click)="saveUser()">{{user.sesa.length > 0 ? 'Update' : 'Create'}}</button>
+    </div>
+  </div>
+</div>

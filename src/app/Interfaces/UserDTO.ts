@@ -5,3 +5,12 @@ export interface UserDTO {
   age: number;
   location: string;
 }
+
+
+
+export interface ExternalUserDTO {
+  firstName: string;
+  lastName: string;
+  email: string;
+  sesa: string;
+}
